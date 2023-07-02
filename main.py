@@ -20,7 +20,7 @@ async def launch_cond():
 async def scrape_data(page1, page2):
 
     while True:
-        if keyboard.is_pressed('-'):
+        if keyboard.is_pressed('shift'):
             print("Scraping paused")
             break
 

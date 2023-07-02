@@ -5,10 +5,10 @@ import keyboard
 
 async def authenticate(page):
 
-    await page.type('#rawUserName', 'smalljoshua579')
+    await page.type('#rawUserName', 'username')
     await page.click('#identitySubmitBtn')
     await asyncio.sleep(0.5)  # Wait for 1 second
-    await page.type('#j_password', '')
+    await page.type('#j_password', 'password')
     await page.click('.btn.btn--people')
 
 async def launch_cond():
